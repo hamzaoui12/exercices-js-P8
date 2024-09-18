@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Page sans Accessibilité</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Accessible</title>
+    <script defer src="index.js"></script> <!-- Ajoutez ce lien pour le script JS -->
 </head>
 <body>
-<h1>Titre de la Page</h1>
-<p>Ceci est un paragraphe de texte.</p>
+    <h1>cookie</h1>
+    
+    <p>Les cookies comptent parmi les biscuits préférés des enfants. Alors, pourquoi ne pas les préparer maison ? C'est meilleur au goût et pour la santé, et bien moins cher par-dessus le marché. De la farine, du beurre, du sucre, un œuf, de la levure et des pépites de chocolat, uniquement des grands basiques du placard. Testez vite cette régressive recette de cookies moelleux à souhait qui fera fondre vos bouts de chou à l'heure du goûter !</p>
 
-<!-- Formulaire sans étiquette pour les champs -->
-<form>
-    <input id="name" type="text" placeholder="Entrez votre nom">
-    <input id="email" type="email" placeholder="Entrez votre adresse e-mail">
-    <button type="submit">Envoyer</button>
-</form>
+    <form id="myForm">
+        <label for="name">Nom :</label>
+        <input id="name" type="text" placeholder="Entrez votre nom" aria-required="true" aria-label="Nom">
+        
+        <label for="email">E-mail :</label>
+        <input id="email" type="email" placeholder="Entrez votre adresse e-mail" aria-required="true" aria-label="E-mail">
+        
+        <button type="submit">Envoyer</button>
+        <p id="error-message" style="color: red;"></p> <!-- Message d'erreur -->
+    </form>
 
-<!-- Image sans attribut alt -->
-<img src="assets/image.png" height=250>
+    <img src="https://img.cuisineaz.com/660x660/2015/08/11/i78773-cookie-moelleux-aux-pepites-de-chocolat.webp" alt="Description de l'image" height="250">
 
-<!-- Lien sans texte descriptif -->
-<a href="#">Cliquez ici</a>
+    <a href="https://www.cuisineaz.com/recettes/cookie-moelleux-aux-pepites-de-chocolat-80749.aspx" title="Visitez notre site pour plus d'informations">Visitez notre site</a>
 </body>
 </html>
