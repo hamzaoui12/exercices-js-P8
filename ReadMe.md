@@ -1,6 +1,6 @@
 # Projet 8 : Testez vos compétences, les algorithmes en Javascript
 
-Pour commencer le projet lancez la commande `npm install` qui installera les dépendences du projet.
+Pour commencer le projet lancez la commande `npm install` qui installera les dépendences.
 
 Ensuite vous pourrez réaliser les différents exercices.
 
